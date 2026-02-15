@@ -1,9 +1,9 @@
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import pg from "pg";
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config();
-}
+// if (process.env.NODE_ENV !== "production") {
+//   dotenv.config();
+// }
 
 const { Pool } = pg;
 
