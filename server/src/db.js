@@ -1,9 +1,9 @@
-// import dotenv from "dotenv";
+import dotenv from "dotenv";
 import pg from "pg";
 
-// if (process.env.NODE_ENV !== "production") {
-//   dotenv.config();
-// }
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config();
+}
 
 const { Pool } = pg;
 
@@ -13,5 +13,7 @@ export const pool = new Pool({
   database: process.env.PGDATABASE,
   user: process.env.PGUSER,
   password: process.env.PGPASSWORD,
-  ssl: "require"
+  ssl: {
+  rejectUnauthorized: false
+}
 });
