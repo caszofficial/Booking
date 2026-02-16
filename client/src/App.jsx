@@ -59,7 +59,7 @@ export default function App() {
 
   return (
     <div style={{ fontFamily: "system-ui, Arial", maxWidth: 900, margin: "30px auto", padding: 16 }}>
-      <h1 style={{ marginBottom: 6 }}>Mini Booking</h1>
+      <h1 style={{ marginBottom: 6 }}>Booking</h1>
       {error ? (
         <div style={{ background: "#ffe8e8", padding: 12, borderRadius: 8, marginBottom: 12 }}>
           <b>Error:</b> {error}
